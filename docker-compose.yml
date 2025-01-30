@@ -1,0 +1,18 @@
+services:
+  TF-GPU:
+    container_name: urban_traffic_prediction_correction
+    image: tensorflow/tensorflow:latest-gpu
+    build: ./build/tensorflow      
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/root/_app # we know it is not good practice but... bruh
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            device_ids: ['0']
+            capabilities: [gpu]

@@ -1,0 +1,28 @@
+# To obtain all datas
+open_meteo
+requests-cache 
+retry-requests
+holidays
+
+
+# Data Management
+numpy
+pandas
+
+
+# Plots
+matplotlib
+seaborn
+folium
+tqdm # Progress bar
+
+
+# Addon di tensorflow
+keras-tuner
+## Salvataggio in h5 dei pesi
+pyyaml 
+h5py
+### Required for `tf.keras.utils.plot_model()`
+pydot
+pydot_ng
+graphviz

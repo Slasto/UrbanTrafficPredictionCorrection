@@ -1,6 +1,8 @@
+ipykernel
+
 # To obtain all datas
-open_meteo
-requests-cache 
+openmeteo-requests
+requests-cache
 retry-requests
 holidays
 
